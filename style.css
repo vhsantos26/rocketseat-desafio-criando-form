@@ -1,0 +1,155 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 436px;
+  background: #535971;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #E5E5E5;
+}
+
+.page {
+  width: 750px;
+  margin: 0 auto;
+}
+
+header { 
+  color: #FFFFFF;
+  margin: 140px auto 58px;
+  font-weight: normal;
+}
+
+header h1 {
+  width: 163px;
+  height: 60px;
+  font-size: 48px;
+  margin-bottom: 18px;
+  font-family: 'Staatliches', sans-serif;
+}
+
+header p {
+  width: 417px;
+  height: 46px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+form {
+  background: #FFFFFF;
+  min-height: 300px;
+  border-radius: 20px 20px 0 0;
+  padding: 64px;
+}
+
+fieldset {
+  color: #535971;
+  border: none;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset-wrapper legend {
+  font-size: 24px;
+  line-height: 34px;
+  font-family: 'Staatliches', sans-serif;
+  width: 100%;
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 16px;
+  margin-bottom: 36px;
+}
+
+.input-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BCCC;
+}
+
+.input-wrapper label span:hover {
+  color: #68656e;
+}
+
+.input-wrapper input {
+  border: 1px solid #E6E6F0;
+  height: 56px;
+  border-radius: 8px;
+  background: #FAFAFC;
+  margin-bottom: 16px;
+  padding: 0 24px;
+}
+
+.column-2 {
+  display: flex;
+  gap: 22px;
+}
+
+.column-2 input {
+  width: 300px;
+}
+
+.time-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.time-wrapper input {
+  width: 140px;
+}
+
+.fieldset-wrapper h2 {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: normal;
+  font-family: 'Staatliches', sans-serif;
+  margin-bottom: 8px;
+}
+
+footer {
+  background: #535971;
+  width: 750px;
+  height: 160px;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+footer button {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 300;
+  font-family: 'Staatliches', sans-serif;
+  width: 608px;
+  height: 56px;
+  border-radius: 20px;
+  border: none;
+  background: #FF5374;
+  color: #FFFFFF;
+  margin: auto;
+}
+
+.input-wrapper input:required:invalid {
+  border: 1px solid #FF0000;
+}
